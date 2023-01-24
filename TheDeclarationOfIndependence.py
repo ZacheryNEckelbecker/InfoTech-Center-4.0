@@ -7,6 +7,7 @@ Our welcome screen will start our program letting drivers
 know that the InfoTech Center 4.0 OS is loading
 """
 # Import Libraries Here
+<<<<<<< HEAD
 import time
 import sys
 
@@ -24,3 +25,13 @@ while x != 20:
         a = 0
     if x == 20:
         print('\033[1;32;40m Done!')
+=======
+from time import sleep
+
+
+
+print ("\n\nWelcome - InfoTech 4.0 OS is Loading")
+sleep(1)
+
+
+>>>>>>> WelcomeScreen
