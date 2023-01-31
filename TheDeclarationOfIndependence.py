@@ -23,7 +23,7 @@ import random
 
 # Gas level Function
 def gaslevelGauge():
-    gasLevelList = ["Empty","low","1/4 tank","Half Tank","3/4 Tank","Full thank"]
+    gasLevelList = ["Empty","low","1/4 Tank","Half Tank","3/4 Tank","Full Tank"]
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
 
