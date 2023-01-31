@@ -29,9 +29,9 @@ def gaslevelGauge():
 
 
 
-<<<<<<< HEAD
+
 print(gaslevelGauge())
-=======
+
 print (gaslevelGauge())
 
 # Gas Station Function
@@ -42,4 +42,4 @@ def closestGasStation():
 
 print (closestGasStation())
 
->>>>>>> Gasoline
+
