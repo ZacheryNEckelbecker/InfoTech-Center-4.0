@@ -30,9 +30,8 @@ def gaslevelGauge():
 
 
 
-print(gaslevelGauge())
 
-print (gaslevelGauge())
+
 
 # Gas Station Function
 def closestGasStation():
@@ -40,6 +39,6 @@ def closestGasStation():
     closestGasStations = random.choice(gasStations)
     return closestGasStations
 
-print (closestGasStation())
+
 
 
