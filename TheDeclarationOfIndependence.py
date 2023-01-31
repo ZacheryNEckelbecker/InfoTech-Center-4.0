@@ -29,4 +29,17 @@ def gaslevelGauge():
 
 
 
+<<<<<<< HEAD
 print(gaslevelGauge())
+=======
+print (gaslevelGauge())
+
+# Gas Station Function
+def closestGasStation():
+    gasStations = ["Shell","Sams Club","Costco","Buc-ee's","7 Eleven","speedway","Circle-K","Meijer","Marathon"]
+    closestGasStations = random.choice(gasStations)
+    return closestGasStations
+
+print (closestGasStation())
+
+>>>>>>> Gasoline
