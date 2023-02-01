@@ -33,6 +33,7 @@ def gaslevelGauge():
 gasLevelIndicator = gaslevelGauge()
 
 
+
 # Gas Station Function
 def closestGasStation():
     gasStations = ["Shell","Sams Club","Costco","Buc-ee's","7 Eleven","speedway","Circle-K","Meijer","Marathon"]
@@ -48,5 +49,14 @@ def gaslevelAlert():
         print ("*** WARNING GAS LEVEL IS EMPTY***")
         time.sleep(1)
         print ("Calling Emergency Contact")
+    elif gasLevelIndicator == "low":
+        print (" ***Warning*** Gas tank is extremely low")
+        time.sleep(.5)
+        print ("Finding closest gas station")
+        time.sleep(.5)
+        print ("The closest gas station is", closestGasStation(), "which is", milesToLow, "miles away")
+
+
+gaslevelAlert()
 
 
