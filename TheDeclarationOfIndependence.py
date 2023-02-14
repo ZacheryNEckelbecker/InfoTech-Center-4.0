@@ -114,7 +114,7 @@ def gaslevelAlert():
     else:
         print ("Your gas tank is full, no need to do anything")
 
-gaslevelAlert()
+
 
 
 
@@ -132,7 +132,6 @@ weatherAlert = weather()
 
 # VRS() to respond to the weather condtions 
 def vRS():
-    print
     if weatherAlert == "Snowing":
         print ("\nNational Weather service has changed your alarm by 15 minutes because of th weather forcest of",weatherAlert)
         print ("your VRS has been ingaed only allowing your vehicle to go 45 MPH")
@@ -150,6 +149,14 @@ def vRS():
         print ("your VRS has been ingaed only allowing your vehicle to go 25 MPH")
     else:
         print ("Its a sunny day, please still drive carfully")
+        print (                                            )
+
+
+
+#call fucntions here 
+print ("National Weather service is checking condtion. ")
+time.sleep(1)
 vRS()
-
-
+print ("Checking Current Gas Level")
+time.sleep(1)
+gaslevelAlert()
