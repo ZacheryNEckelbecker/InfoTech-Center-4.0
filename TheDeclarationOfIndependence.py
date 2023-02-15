@@ -37,19 +37,6 @@ while x != 20:
 from time import sleep
 
 
-
-print ("\n\nWelcome - InfoTech 4.0 OS is Loading")
-sleep(1)
-
-
-
-
-
-
-
-
-
-
 # Date: 1.30.2023
 # program: Infotech Center 4.0 Gasoline
 
