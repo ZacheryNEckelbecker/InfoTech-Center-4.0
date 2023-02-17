@@ -28,11 +28,11 @@ while x != 20:
     b = ("\033[31m[\Welcome - InfoTech 4.0 OS is Loading" + "." * a)
     a = a + 1
     sys.stdout.write('\r'+b) # \r prints a carriage return first, so `b` is printed on top of the previous line.
-    time.sleep(0.25)
+    time.sleep(0.0)
     if a == 4:
         a = 0
     if x == 20:
-        print('\033[31m[1;32;40m Done!')
+        print('Done!')
 
 from time import sleep
 
@@ -113,6 +113,27 @@ def gaslevelAlert():
         print (" Your gas tank is at 3/4, you have time to make it to your destination")
     else:
         print ("Your gas tank is full, no need to do anything")
+
+
+
+
+# Adding a program that gives you sigestions on your speed for how much sleep you got
+sleep = int(input("How many hours of sleep did you get last night: "))
+
+if sleep <= 1:
+    print ("Please do not drive right now.")
+elif sleep == 2 or 3 or 4:
+    print ("\nPlease don't try to drive but if you have to drive 5 below the speed limit")
+elif sleep == 5 or 6 or 7:
+    print ("\nYou can drive normally just please be a little more aware of your seraoundings")
+else:
+    print ("you got a good amount of sleep, good for you")
+
+
+
+
+
+
 
 
 
