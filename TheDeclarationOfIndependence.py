@@ -28,11 +28,12 @@ while x != 20:
     b = ("\033[31mWelcome - InfoTech 4.0 OS is Loading" + "." * a)
     a = a + 1
     sys.stdout.write('\r'+b) # \r prints a carriage return first, so `b` is printed on top of the previous line.
-    time.sleep(0.25)
+    time.sleep(0.0)
     if a == 4:
         a = 0
     if x == 20:
-        print(Done!')
+        print('Done!')
+
 
 from time import sleep
 
@@ -104,6 +105,32 @@ def gaslevelAlert():
 
 
 
+# Adding a program that gives you sigestions on your speed for how much sleep you got
+sleep = int(input("How many hours of sleep did you get last night: "))
+
+if sleep <= 1:
+    print ("Please do not drive right now.")
+elif sleep == 2 or 3 or 4:
+    print ("\nPlease don't try to drive but if you have to drive 5 below the speed limit")
+elif sleep == 5 or 6 or 7:
+    print ("\nYou can drive normally just please be a little more aware of your seraoundings")
+else:
+    print ("you got a good amount of sleep, good for you")
+
+
+
+# Adding a .random that will tell you when someone is in your blindspot
+
+def blindspot():
+    blindSpots = ("Left spot", "Right spot")
+    inblindspot = random.choice(blindSpots)
+
+
+
+
+
+
+
 
 
 # Create weather conditions in a list and choose them randomly 
@@ -135,8 +162,71 @@ def vRS():
         print ("\nNational Weather service has changed your alarm by 65 minutes because of th weather forcest of",weatherAlert)
         print ("your VRS has been ingaed only allowing your vehicle to go 25 MPH")
     else:
-        print ("Its a sunny day, please still drive carfully")
-        print (                                            )
+        print ("\nIts a sunny day, please still drive carfully")
+
+
+def check_engine():
+    engine_problems = ["spark plugs", "low oil pressure", "overheating engine", "oxygen sensor", "No Engine Problems"]
+    print("Engine problem:", random.choice(engine_problems))
+
+
+def check_transmission():
+    transmission_problems = ["slipping transmission", "delayed engagement", "overheating transmission", "fluid leaks",
+                             "No Transmission Problems"]
+    print("Transmission problem: ", random.choice(transmission_problems))
+
+
+def check_brakes():
+    brake_problems = ["squeaky brakes", "Bad brake pedal", "low brake fluid", "No Brake Problems"]
+    print("\nBrake problem: ", random.choice(brake_problems))
+
+
+print("\nWhich part of the vehicle would you like to check?")
+print("1. Engine")
+print("2. Transmission")
+print("3. Brakes")
+print("4. No Part")
+
+part_choice = input("Enter your choice (1, 2, 3, 4): ")
+
+if part_choice == "1":
+    while x != 50:
+        x += 1
+        b = ("Checking engine " + "." * a)
+        a = a + 1
+        sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
+        sleep(0.1)
+        if a == 4:
+            a = 0
+        if x == 50:
+            print('\n')
+    check_engine()
+
+elif part_choice == "2":
+    while x != 60:
+        x += 1
+        b = ("Checking transmission " + "." * a)
+        a = a + 1
+        sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
+        sleep(0.1)
+        if a == 4:
+            a = 0
+        if x == 60:
+            print('\n')
+    check_transmission()
+elif part_choice == "3":
+    while x != 70:
+        x += 1
+        b = ("Checking brakes " + "." * a)
+        a = a + 1
+        sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
+        sleep(0.1)
+        if a == 4:
+            a = 0
+        if x == 70:
+            print('\n')
+    check_brakes()
+
 
 
 
