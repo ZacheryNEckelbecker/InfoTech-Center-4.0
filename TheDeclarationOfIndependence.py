@@ -122,8 +122,11 @@ else:
 # Adding a .random that will tell you when someone is in your blindspot
 
 def blindspot():
-    blindSpots = ("Left spot", "Right spot")
+    blindSpots = ("Left blind spot", "Right blind spot")
     inblindspot = random.choice(blindSpots)
+    print ("\nSomeone is in your", inblindspot)
+
+
 
 
 
@@ -195,7 +198,7 @@ if part_choice == "1":
         b = ("Checking engine " + "." * a)
         a = a + 1
         sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
-        sleep(0.1)
+        time.sleep(0.1)
         if a == 4:
             a = 0
         if x == 50:
@@ -208,7 +211,7 @@ elif part_choice == "2":
         b = ("Checking transmission " + "." * a)
         a = a + 1
         sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
-        sleep(0.1)
+        time.sleep(0.1)
         if a == 4:
             a = 0
         if x == 60:
@@ -220,7 +223,7 @@ elif part_choice == "3":
         b = ("Checking brakes " + "." * a)
         a = a + 1
         sys.stdout.write('\r' + b)  # \r prints a carriage return first, so `b` is printed on top of the previous line.
-        sleep(0.1)
+        time.sleep(0.1)
         if a == 4:
             a = 0
         if x == 70:
@@ -237,3 +240,4 @@ vRS()
 print ("Checking Current Gas Level")
 time.sleep(1)
 gaslevelAlert()
+blindspot()
